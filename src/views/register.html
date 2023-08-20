@@ -1,0 +1,67 @@
+/*Nombre y apellido ■ Nombre de usuari@ ■ Fecha de nacimiento ■ Domicilio ■
+Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) ■
+Categorías de interés (puede elegir más de una) ● Electro ● Moda ● Hogar
+●Juguetería ● Vida sana ■ Foto de usuario ■ Contraseña ■ Confirmar contraseña ■
+Botón de enviar que nos lleve a la página principal ■ Botón de borrar todos los
+datos del formulario*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Mercado Liebre</title>
+  </head>
+  <body>
+    <form action="/crear-producto" method="post" class="create-form"></form>
+    <div class="control-formulario">
+      <label>Nombre del producto:</label>
+      <input type="text" name="nombre" class="control" />
+    </div>
+    <div class="control-formulario">
+      <label>Precio:</label>
+      <input type="text" name="precio" placeholder="1500" class="control" />
+    </div>
+    <div class="control-formulario">
+      <label>Categoría:</label>
+      <select type="text" name="categoría" class="control">
+        <option value="hogar">Hogar</option>
+        <option value="electro">Electro</option>
+        <option value="indumentaria">Indumentaria</option>
+      </select>
+    </div>
+    <div class="control-formulario">
+      <label>Ciudad:</label>
+      <select type="text" name="ciudad" class="control">
+        <option value="bs">Buenos Aires</option>
+        <option value="mdz">Mendoza</option>
+        <option value="cba">Córdoba</option>
+      </select>
+    </div>
+    <div class="control-formulario">
+      <label>Descripción:</label>
+      <textarea name="descripción" class="control"></textarea>
+    </div>
+    <div class="control-formulario">
+      <label>Está en oferta:</label>
+      <input type="radio" name="enOferta" />
+    </div>
+    <button type="reset" class="button-formulario">Borrar</button>
+    <button type="submit" class="button-formulario">Guardar</button>
+  </body>
+</html>

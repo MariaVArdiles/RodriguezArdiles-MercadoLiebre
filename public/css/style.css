@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+.headerML {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.logo-mercado-liebre {
+  width: 40vw;
+}
+
+.searchBar {
+  align-items: center;
+  width: 30vw;
+  padding: 10px;
+  border: 1px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.handdollartext {
+  text-align: center;
+  width: 40vw;
+  padding-right: 3px;
+}
+
+.burger-menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1259c3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 600px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* links */
+.nav-items {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-right: 900px;
+  justify-content: space-between;
+  margin: 0 400px;
+  margin-left: 3px;
+}
+.nav-items-two {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-right: 900px;
+  justify-content: space-between;
+  margin: 0 400px;
+  margin-right: 3px;
+}
+ul a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.bg-yellow {
+  background-color: #eac926;
+}
+
+.bg-light-grey {
+  background-color: #ebebeb;
+}
+
+.bg-white {
+  background-color: white;
+}
+.w-50 {
+  width: 50%;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+/*cards*/
+
+.titulares {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.descriptions {
+  font-size: 16px;
+}
+
+.vw-90 img {
+  width: 90vw;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.bt-1 {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.border-grey {
+  border-color: #ebebeb;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  flex: 1;
+  box-sizing: border-box;
+  width: 30vw;
+  max-width: 300px;
+}
+
+/*descripciones de las cards*/
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.elemento1 {
+  width: 30%;
+}
+
+.elemento2 {
+  width: 70%;
+  color: #39b54a;
+}
+
+h3 {
+  padding: 15px;
+  color: #666666;
+}
+.icono {
+  color: #39b54a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: 2em;
+
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+/* página de registro*/
+
+.create-form {
+  padding: 20px 15px;
+}
+.control-formulario {
+  margin-bottom: 15px;
+}
+
+.control-formulario label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+}
+
+.control {
+  width: 100vw;
+  padding: 8px 8px;
+}
+
+.button-formulario {
+  background-color: #39b54a;
+  border: none;
+  font-size: 20px;
+  color: #ffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* footer */
+
+.footer {
+  display: block;
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  size: 2em;
+  color: #03264c;
+  margin-bottom: 10px;
+}
+
+.text1 {
+  text-align: center;
+  font-weight: bold;
+}
+.text2 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block; /* Muestra el menú hamburguesa */
+  }
+
+  .nav-items {
+    display: none; /* Oculta la lista de enlaces */
+  }
+  .nav-items-two {
+    display: none; /* Oculta la lista de enlaces */
+  }
+}
+@media (min-width: 1280px), (max-width: 1440px) {
+  .md-product-shadow {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .burger-menu {
+    display: none; /* oculta el menú hamburguesa */
+  }
+
+  .nav-items {
+    display: block; /* muestra la lista de enlaces */
+  }
+  .nav-items-two {
+    display: block; /* muestra la lista de enlaces */
+  }
+}

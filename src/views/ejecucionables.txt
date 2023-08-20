@@ -1,0 +1,36 @@
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+=== COLORES ===
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+
+=== TIPOGRAFÍAS ===
+Familia: 'Roboto'
+Versiones: 300, 400, 700
+
+
+=== HEADER - TEXTOS ===
+Buscar productos, marcas y más
+Comprá en cuotas y sin tarjeta de crédito
+
+
+=== NAVBAR - TEXTOS ===
+Ofertas
+Tiendas Oficiales
+Vender
+Ayuda
+---
+Creá tu cuenta
+Ingresá
+Mis compras
