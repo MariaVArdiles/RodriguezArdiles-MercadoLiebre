@@ -1,10 +1,3 @@
-/*Nombre y apellido ■ Nombre de usuari@ ■ Fecha de nacimiento ■ Domicilio ■
-Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) ■
-Categorías de interés (puede elegir más de una) ● Electro ● Moda ● Hogar
-●Juguetería ● Vida sana ■ Foto de usuario ■ Contraseña ■ Confirmar contraseña ■
-Botón de enviar que nos lleve a la página principal ■ Botón de borrar todos los
-datos del formulario*/
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,43 +18,195 @@ datos del formulario*/
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
     <title>Mercado Liebre</title>
   </head>
   <body>
-    <form action="/crear-producto" method="post" class="create-form"></form>
-    <div class="control-formulario">
-      <label>Nombre del producto:</label>
-      <input type="text" name="nombre" class="control" />
+    <!--Body-->
+
+  <!--Nav-->
+  <body class="bg-light-grey">
+    <header class="bg-yellow p-1">
+      <div class="headerML">
+        <h1 class="w-1">
+       <img
+              src="/images/logo-mercado-liebre.svg"
+              alt="logo-mercado-liebre"
+          />
+        </h1>
+
+        <form class="search" action="" method="" role="search">
+          <input type="text" placeholder="Buscar productos, marcas" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <p class="handdollartext">
+          <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
+          tarjeta de crédito
+        </p>
+      </div>
+
+      <!--Links primer grupo-->
+      <nav class="nav-container">
+        <ul class="nav-items">
+          <li>
+            <a href="#" class="titulares">Ofertas</a>
+          </li>
+          <li>
+            <a href="#">Tiendas Oficiales</a>
+          </li>
+          <li>
+            <a href="#">Vender</a>
+          </li>
+          <li>
+            <a href="#">Ayudas</a>
+          </li>
+        </ul>
+
+        <!--Links segundo grupo-->
+        <ul class="nav-items">
+          <li>
+            <a href="register.html"
+              >Creá tu cuenta <i class="fa-solid fa-address-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="login.html"
+              >Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              >Mis compras <i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+  <!--Main Register-->
+  <main class="main-register">
+    <h1>Creá tu cuenta</h1>
+    
+    <div class="form-register">
+      <form action="/" method="get">
+
+      <div class="registerInfo">
+        <input type="text" name="name" placeholder="Nombre y Apellido" required minlength="10" maxlength="15"/>
+      </div>
+
+      <div class="registerInfo">
+        <input type="text" name="name" placeholder="Nombre de usuario" />
+      </div>
+
+    <div class="registerInfo">
+        <input type="text" name="adress" placeholder="Domicilio" />
+      </div>
+
+      <div class="registerMoreInfo">
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+
+     
+      <div class="registerMoreInfo" >
+        
+      <label class="label-option">¿Qué desea hacer?
+        <input type="radio" name="option" value="comprar"> Comprar
+      </label>
+      <label class="label-option">
+        <input type="radio" name="option" value="vender"> Vender
+      </label>
+        </div>
+
+
+        <div class="registerMoreInfo">
+            
+            <label class="label-register">Categoría de interés 
+                <input type="checkbox" name="category" value="electro"> Electro
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="moda">Moda
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="hogar"> Hogar
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="jugueteria"> Juguetería
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="vida sana"> vida Sana
+              </label>
+            </div>
+
+            <div class="registerMoreInfo">
+            <label class="label-register">Seleccionar una imagen para el perfil:</label>
+            <input type="file" name="avatar" accept=".jpg " multiple>
+             </div>
+            
+
+
+            <div class="registerMoreInfo">
+            <label for="password" >Contraseña:</label>
+            <input type="password" id="password" name="password">
+           
+            <label for="confirmPassword"class="label-register">Confirmar Contraseña:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <button type="submit">Registrarse</button>
+            </div>
+     
+      <form action="/" method="get">
+      <button type="submit" class="button-register">Enviar</button>
+      <button type="reset" class="button-register">Borrar</button>
+     </form> 
+     
+      
     </div>
-    <div class="control-formulario">
-      <label>Precio:</label>
-      <input type="text" name="precio" placeholder="1500" class="control" />
-    </div>
-    <div class="control-formulario">
-      <label>Categoría:</label>
-      <select type="text" name="categoría" class="control">
-        <option value="hogar">Hogar</option>
-        <option value="electro">Electro</option>
-        <option value="indumentaria">Indumentaria</option>
-      </select>
-    </div>
-    <div class="control-formulario">
-      <label>Ciudad:</label>
-      <select type="text" name="ciudad" class="control">
-        <option value="bs">Buenos Aires</option>
-        <option value="mdz">Mendoza</option>
-        <option value="cba">Córdoba</option>
-      </select>
-    </div>
-    <div class="control-formulario">
-      <label>Descripción:</label>
-      <textarea name="descripción" class="control"></textarea>
-    </div>
-    <div class="control-formulario">
-      <label>Está en oferta:</label>
-      <input type="radio" name="enOferta" />
-    </div>
-    <button type="reset" class="button-formulario">Borrar</button>
-    <button type="submit" class="button-formulario">Guardar</button>
+</form>
+
+  </main>
+
+    <!-- Footer -->
+
+    <!-- Parte 1 -->
+    <footer class="mb-10 bg-white md-product-shadow">
+      <div class="footer">
+        <i class="fa-solid fa-credit-card"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>
+          Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo
+          en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </div>
+      <!-- Parte 2 -->
+      <div class="footer">
+        <i class="fa-solid fa-gift"></i>
+        <h4>Envío gratis desde los $2.500</h4>
+        <p>
+          Sólo por estar registrad@ en MercadoLiebre tenés envíos gratis en
+          miles de productos. Es un beneficio de MercadoPuntos.
+        </p>
+      </div>
+      <!-- Parte 3 -->
+      <div class="footer">
+        <i class="fa-solid fa-user-shield"></i>
+        <h4>Seguridad de principio a fin</h4>
+        <p>
+          ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas
+          hacer porque estas siempre protegid@.
+        </p>
+      </div>
+      <!-- Copyright -->
+      <p class="finalText">Copyright 1999-2000 MercadoLiebre S.R.L.</p>
+    </footer>
+    
   </body>
 </html>
+<!--Nombre y apellido ■ Nombre de usuari@ ■ Fecha de nacimiento ■ Domicilio ■
+Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) ■
+Categorías de interés (puede elegir más de una) ● Electro ● Moda ● Hogar
+●Juguetería ● Vida sana ■ Foto de usuario ■ Contraseña ■ Confirmar contraseña ■
+Botón de enviar que nos lleve a la página principal ■ Botón de borrar todos los
+datos del formulario-->
